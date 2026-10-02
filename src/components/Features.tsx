@@ -28,7 +28,7 @@ const platformFeatures = [
   { icon: BarChart3, title: "Analytics", desc: "See your impact and earnings" },
 ];
 
-const FeatureCard = ({ icon: Icon, title, desc }: { icon: any, title: string, desc: string }) => (
+const FeatureCard = ({ icon: Icon, title, desc }: { icon: React.ElementType, title: string, desc: string }) => (
   <div className="flex items-start gap-4 p-4 rounded-2xl bg-card border border-border/50 card-hover">
     <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0">
       <Icon className="w-5 h-5 text-primary" />
